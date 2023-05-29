@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
-import os
+
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -20,15 +20,12 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY', '-fjn&lttl&jn2j-j)$&pzhw-260(+yj)(8r#thrape@9(=!ga$')
+SECRET_KEY = '-fjn&lttl&jn2j-j)$&pzhw-260(+yj)(8r#thrape@9(=!ga$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-# ALLOWED_HOSTS = 127.0.0.1
-ALLOWED_HOSTS = ['django-thesis-env.eba-tfsur8vw.us-west-2.elasticbeanstalk.com']
-# ALLOWED_HOSTS = []
-# if not DEBUG:
-#     ALLOWED_HOSTS += [os.environ.get(ALLOWED_HOSTS)]
+
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -146,7 +143,6 @@ MESSAGE_TAGS = {
 EMAIL_HOST = 'smtp.freesmtpservers.com'
 EMAIL_PORT = 25
 EMAIL_HOST_USER = 'helloplease@haha.com'
-# EMAIL_HOST_PASSWORD = 'Kacpihokage2846!'
 EMAIL_USE_TLS = False
 
 GRAPH_MODELS = {

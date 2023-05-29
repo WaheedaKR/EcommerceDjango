@@ -480,8 +480,8 @@ mark,
 }
 
 .img-fluid {
-  max-width: 100%;
-  height: auto;
+  max-width: 50%;
+  height: 340px;
 }
 
 .img-thumbnail {
@@ -541,7 +541,7 @@ pre code {
 }
 
 .pre-scrollable {
-  max-height: 340px;
+  ;
   overflow-y: scroll;
 }
 
