@@ -19,8 +19,10 @@ from . import views
 from django.conf.urls.static import static
 from django.conf import settings
 
+
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('veryhiddenadmin/', admin.site.urls),
+    path('admin/', include('admin_honeypot.urls', namespace='admin_honeypot')),
     path('', views.home, name='home'),
     path('shop/', include('shop.urls')),
     path('cart/', include('cart.urls')),
